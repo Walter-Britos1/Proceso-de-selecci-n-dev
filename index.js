@@ -23,6 +23,28 @@ const findLostNumber = (set) => {
 
   // Inicializar contador
   let counter = {};
+
+  // Recorrer el array
+  for (let i = 0; i < set.length; i++) {
+    counter[set[i]] 
+    // Si el numero se encuentra en el contador, incrementamos su frecuencia
+      ? counter[set[i]] ++
+      // Si el numero no se encuentra en el contador, iniciamos su frecuencia en 1
+      : counter[set[i]] = 1;
+  };
+
+  // Recorremos el objeto contador para buscar el nuemro unico 
+  for (let number in counter) {
+    if (counter[number] === 1) {
+      return parseInt(number);
+    }
+  };
 };
 
-console.log(findLostNumber(set));
+
+let lostNumber = findLostNumber(set);
+
+lostNumber 
+  ? console.log(`The number unique is: ${lostNumber}`) 
+  : console.log('No unique number found');
+
