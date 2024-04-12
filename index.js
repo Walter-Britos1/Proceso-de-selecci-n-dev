@@ -36,7 +36,7 @@ const findLostNumber = (set) => {
   // Recorremos el objeto contador para buscar el nuemro unico 
   for (let number in counter) {
     if (counter[number] === 1) {
-      return parseInt(number);
+      return number;
     }
   };
 };
@@ -45,6 +45,5 @@ const findLostNumber = (set) => {
 let lostNumber = findLostNumber(set);
 
 lostNumber 
-  ? console.log(`The number unique is: ${lostNumber}`) 
+  ? console.log(`The number unique is: ${lostNumber}`)
   : console.log('No unique number found');
-

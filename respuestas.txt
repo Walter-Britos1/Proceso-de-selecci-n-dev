@@ -1,0 +1,19 @@
+¿Cómo abordaste el problema?
+
+Lo primero que hice fue pensar en los posibles casos de roptura del algoritmo, 
+como por ejemplo que el conjunto no sea un conjunto de numeros, si bien en este caso
+se que voy a recibir espesificamente, me parecio correcto de todas maneras tener en cuenta 
+todos los casos posibles. Luego me enfoque en como encontrar el numero unico que no se repite.
+
+¿Qué estrategia utilizaste para identificar el número único?
+
+Para identificar el numero unico lo primero que hice fue recorrer el conjunto de numeros
+comparando cada numero con los demas para identificar al que no se repite
+Utilice un enfoque basado en el conjunto de numeros para eliminar los que se encontraban 
+duplicados para luego quedarme solo con el que no se repetia.
+
+¿Cómo manejas los casos donde el conjunto no cumple con las condiciones?
+
+Lo que hice para cada caso fue crear condicionales en donde si hay casos en los que
+el conjunto no cumple con las condiciones, arroja un mensaje en consola advirtiendo 
+que el conjunto no cumple con las condiciones 
